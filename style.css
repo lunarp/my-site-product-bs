@@ -144,7 +144,7 @@ a.navbar-brand {
     color: #fff !important;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 990px) {
   .navbar-header {
       float: none;
   }
@@ -392,6 +392,7 @@ div.modal {
     transform: scale(1.03);
 }
 
+
 .panel-footer .btn {
 	margin: auto;
 	width: 80%;
@@ -408,7 +409,7 @@ div.modal {
 .panel-heading {
     color: #fff !important;
     background-color: #000142 !important;
-    padding: 25px;
+    padding: 3% 2%; 
     border-bottom: 1px solid transparent;
     border-radius: 0px;
 }
