@@ -1,0 +1,473 @@
+/* цвета:
+https://color.adobe.com/ru/KDTX0002-color-theme-9098722/?showPublished=true*/
+
+html, body {
+	font-family: Roboto, Verdana, sans-serif;
+
+}
+
+body {
+	margin: auto;
+	width: 90%;
+}
+
+#product-descr {
+	padding: 0px;
+}
+
+#myCarousel {
+	height: 270px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.bg-grey {
+	background-image: url(images/pixel_weave.png);
+}
+
+.bg-white{
+	background-image: url(images/crossword.png);
+}
+
+.bg-green {
+	background: linear-gradient(45deg, #325E4B , #A8F00E);
+
+}
+
+.bg-blue {
+	background-color: #000142;
+	height: 100%;
+}
+
+.bg-pink {
+	background-color: #F5209A;
+	height: auto;
+}
+
+.heading-white {
+	font-family: 'Pattaya', Verdana, sans-serif;
+	color: white;
+	font-weight: 100;
+	transform: scaleY(1.2);
+}
+
+.heading-black {
+	font-family: 'Comfortaa', Verdana, sans-serif;
+	color: black;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.heading-bottom-padding {
+	padding-bottom: 1.4em;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+
+.heading-top-padding {
+	padding-top: 2.5em;
+}
+
+.text-ell {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+.container-fluid {
+	padding: 60px 50px;
+}
+
+.logo {
+	font-size: 200px;
+	color: #325E4B;
+}
+
+.logo-small {
+	color: #325E4B;
+	font-size: 65px;
+}
+
+.img-prod {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*~~~~~~~~~~~~~
+	 Шапка 
+~~~~~~~~~~~~~~*/
+
+.navbar {
+	padding: 0px;
+    margin-bottom: 0;
+    background-color: #000142;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    letter-spacing: 3px;
+    border-radius: 0;
+    opacity: 0.95;
+}
+
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+a.navbar-brand {
+	padding: 0px;
+}
+
+.navbar-brand img {
+	height: 100%;
+}
+
+.navbar-nav li a {
+	padding-right: 5px;
+	padding-left: 7px;
+}
+
+.navbar-nav li a:hover {
+	background-color: #8A8BCC !important;
+}
+
+
+.navbar-nav li.active a {
+    color: #F5209A !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+@media (max-width: 800px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+
+
+/*~~~~~~~~~~~~~
+	Продукт 
+~~~~~~~~~~~~~~*/
+
+.jumbotron {
+	margin-top: 50px;
+	color: #fff;
+	padding: 15px 0px 35px 0px;
+	margin-bottom: 0px;
+}
+
+div.descr {
+	margin: auto;
+	width: 100%;
+}
+
+.row.descr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+
+.row.descr > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.motto-sm {
+	font-size: 2vw;
+	color: white;
+}
+.motto-lg {
+	font-size: 2.9vw;
+	color: white;
+	font-weight: 900;
+}
+
+.descr .col-sm-8, .descr .col-sm-4{
+	padding: 0px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~
+	Преимущества 
+~~~~~~~~~~~~~~~~~~*/
+
+p.well {
+	margin: auto;
+	width: 75%;
+	max-height: 300px;
+	overflow: scroll;
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+div span.glyphicon {
+	margin: 15px;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~
+	Портфолио 
+~~~~~~~~~~~~~~~~~~*/
+
+.thumbnail {
+	padding: 0 0 15px 0;
+	border: none;
+
+}
+
+.thumbnail:hover {
+	 box-shadow: 5px 10px 40px #CFB2FF; 
+	 transform: scale(1.01);
+}
+
+.thumbnail img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+}
+
+body.modal-open {
+    overflow: auto;
+}
+body.modal-open[style] {
+    padding-right: 0px !important;
+}
+
+.modal::-webkit-scrollbar {
+    width: 0 !important; /*removes the scrollbar but still scrollable*/
+    /* reference: http://stackoverflow.com/a/26500272/2259400 */
+}
+
+
+div.modal {
+	padding: 0px;
+}
+
+.modal-dialog {
+	margin: 10% auto;
+	width: 100%;
+	height: 50%;
+}
+
+.modal-content {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+.modal-body img {
+	width: 100%;
+	max-width: 900px;
+}
+
+/*~~~~~~~~~~~~~
+	 Отзывы 
+~~~~~~~~~~~~~~*/
+
+
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: white;
+}
+
+.carousel-indicators {
+	top: 110%;
+}
+
+.carousel-indicators ol {
+	list-style-type: square;
+    font-size: 20px;
+}
+
+.carousel-indicators li {
+    border-color: white;
+}
+
+.carousel-indicators li.active {
+    background-color: white;
+}
+
+.carousel-inner {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.glyphicon-triangle-left, .glyphicon-triangle-right {
+	font-size: 50px;
+	padding-top: 260px;
+}
+
+.item {
+	height: 100%;
+}
+
+.item h4 {
+	margin-bottom: 3%;
+	margin-top: 5%;
+	height: 100%;
+	overflow: scroll;
+	overflow-y: auto;
+	font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 50px 0;
+}
+
+.item.active {
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.item img {
+	display: block;
+	margin: 3% auto 1%;
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+
+.item p.stater {
+	font-family: 'Comfortaa';
+}
+
+/*~~~~~~~~~~~~~~~
+	 Расценки 
+~~~~~~~~~~~~~~~~*/
+
+.panel {
+    border: 1px solid #CFB2FF; 
+    border-radius: 1px;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px #CFB2FF;
+    transform: scale(1.03);
+}
+
+.panel-footer .btn {
+	margin: auto;
+	width: 80%;
+	padding: 5% 0%;
+	font-size: 1.6em;
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid #000142;
+    background-color: #fff !important;
+    color: #000142;
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: #000142 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-radius: 0px;
+}
+
+.panel-body {
+	font-size: 1.4em;
+}
+
+.panel-footer {
+    background-color: #fff !important;
+}
+
+.panel-footer h3 {
+    font-size: 32px;
+}
+
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #000142;
+    color: #fff;
+}
+
+
+/*~~~~~~~~~~~~~~~
+	 Контакты 
+~~~~~~~~~~~~~~~~*/
+
+.contact-info{
+	font-size: 16px;
+}
+
+.form-group button {
+	margin-top: 20px;
+}
+
+
+/*~~~~~~~~~~~~~
+	 Подвал 
+~~~~~~~~~~~~~~*/
+
+footer.container-fluid {
+	padding-bottom: 5px;
+}
+
+footer a span {
+	font-size: 40px;
+	color: white;
+}
+
+footer a span:hover {
+	color: #EDCEED;
+}
+
+footer h5, footer h6 {
+	text-align: right;
+	color: white;
+}
