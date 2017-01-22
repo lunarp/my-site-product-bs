@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html class="bg-white">
+<html class="bg-white" lang="zxx">
 <head>
-  <title>Продукт</title>
+  <title>Product</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
@@ -10,7 +10,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Jura|Pattaya|Comfortaa" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 
   <script type="text/javascript" src="content.js"></script>
 </head>
@@ -25,7 +27,8 @@
         <span class="icon-bar"></span> 
       </button>
       <a class="navbar-brand" href="#">
-        <img src="images/sample-logo-white.png">
+        <img alt="Image" src
+        ="images/sample-logo-white.png">
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -59,7 +62,8 @@
 <div id="product-descr" class="container-fluid text-center bg-white">
   <div class="row descr">
     <div class="col-xs-8" >
-      <img src="images/camera.jpg" class="img-prod">
+      <img alt="Image" src
+      ="images/camera.jpg" class="img-prod">
     </div>
     <div class="col-xs-4">
       <div class="bg-blue">
@@ -75,7 +79,7 @@
 <!--ПРЕИМУЩЕСТВА-->
 
 <div id="pros" class="container-fluid text-center bg-grey">
-  <h2 class="heading-bottom-padding heading-black">ПОЧЕМУ "ПРОДУКТ"</h2>
+  <h2 class="heading-bottom-padding heading-black">ПРЕИМУЩЕСТВА</h2>
   <h3 class="heading-bottom-padding heading-black">С нами вы получаете:</h3>
   <div class="row">
     <div class="col-md-4 col-sm-6">
@@ -126,23 +130,24 @@
 <!--ПОРТФОЛИО-->
 
 <div id="portfolio" class="container-fluid text-center bg-white">
-  <h2 class="heading-bottom-padding heading-black">Портфолио</h3>
-  <h3 class="heading-bottom-padding heading-black">Наши достижения</h4>
+  <h2 class="heading-bottom-padding heading-black">Портфолио</h2>
+  <h3 class="heading-bottom-padding heading-black">Наши достижения</h3>
 
   <div class="row text-center">
     <div class="col-md-4 col-sm-6">
       <div class="thumbnail" data-toggle="modal" data-target="#myModal-1">
-        <img src="images/alpinist.jpg">
+        <img alt="Image" src
+        ="images/alpinist.jpg">
         <p><strong>Горы</strong></p>
         <p>Мы покоряем вершины - нажми</p>
       </div>
       <!-- Modal -->
-      <div id="myModal-1" data-dismiss="modal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+      <div id="myModal-1" class="modal fade" role="dialog">
+        <div class="modal-dialog" data-dismiss="modal">
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-body">
-              <img data-dismiss="modal" src="images/alpinist.jpg">
+              <img alt="Portfolio-Image" data-dismiss="modal" src="images/alpinist.jpg">
             </div>
           </div>
         </div>
@@ -150,17 +155,18 @@
     </div>
     <div class="col-md-4 col-sm-6">
       <div class="thumbnail" data-toggle="modal" data-target="#myModal-2">
-        <img src="images/football.jpg">
+        <img alt="Image" src
+        ="images/football.jpg">
         <p><strong>Спорт</strong></p>
         <p>Мы лучшие в спорте - нажми</p>
       </div>
       <!-- Modal -->
-      <div id="myModal-2" data-dismiss="modal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+      <div id="myModal-2" class="modal fade" role="dialog">
+        <div class="modal-dialog" data-dismiss="modal">
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-body">
-              <img data-dismiss="modal" src="images/football.jpg">
+              <img alt="Portfolio-Image" data-dismiss="modal" src="images/football.jpg">
             </div>
           </div>
         </div>
@@ -168,17 +174,18 @@
     </div>
     <div class="col-md-4 col-sm-12">
       <div class="thumbnail" data-toggle="modal" data-target="#myModal-3">
-        <img src="images/skate.jpg">
+        <img alt="Image" src
+        ="images/skate.jpg">
         <p><strong>Курорты</strong></p>
         <p>Туризм - наше второе имя - нажми</p>
       </div>
       <!-- Modal -->
-      <div id="myModal-3" data-dismiss="modal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+      <div id="myModal-3" class="modal fade" role="dialog">
+        <div class="modal-dialog" data-dismiss="modal">
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-body">
-              <img data-dismiss="modal" src="images/skate.jpg">
+              <img alt="Portfolio-Image" data-dismiss="modal" src="images/skate.jpg">
             </div>
           </div>
         </div>
@@ -191,7 +198,7 @@
 <!--ОТЗЫВЫ-->
 <div id="reviews" class="container-fluid text-center bg-green">
   <h1 class="heading-bottom-padding heading-white">Отзывы наших клиентов</h1>
-  <div id="myCarousel" class="carousel slide text-center well" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide text-center bvc" data-ride="carousel">
     <!-- Indicators-->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -200,28 +207,41 @@
       <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>  
     <!--Wrapper for slides-->
-    <div class="carousel-inner bg-white" role="listbox">
+    <div class="carousel-inner bg-white content" role="listbox">
       <div class="item active">
-        <h4>"Работаем с продуктом уже довольно давно. Никаких нареканий, одни положительные впечатления. Будем продолжать сотрудничество."
-          <img src="images/male.png"> <p class="stater">Барак Обама</p>
-        </h4>
+        <div class="item-inner">"Работаем с продуктом уже довольно давно. Никаких нареканий, одни положительные впечатления. Будем продолжать сотрудничество."
+        </div>
+        <div class="wrapper-center">
+          <div class="stater"> <img alt="Image" src
+          ="images/male.png"> Барак Обама, экс-президент США</div>
+        </div>            
       </div>
       <div class="item">
-        <h4>"Результаты превзошли ожидания: рост продаж за первый квартал составил +96%, и это в “мертвый сезон”, когда обычно у нас убыток."
-          <img src="images/male.png"> <p class="stater">Дональд Трамп</p>
-        </h4>
+        <div class="item-inner">"Результаты превзошли ожидания: рост продаж за первый квартал составил +96%, и это в “мертвый сезон”, когда обычно у нас убыток."
+        </div>
+        <div class="wrapper-center">
+          <div class="stater"> <img alt="Image" src
+          ="images/male.png"> Дональд Трамп, президент США</div>
+        </div>
       </div>
       <div class="item">
-        <h4>"Хотя в произведениях Аристотеля в чистом виде золотое правило не встречается, в его этике есть много созвучных суждений, например на вопрос: «Как вести себя с друзьями?», Аристотель отвечает: «Так, как хотелось бы, чтобы они вели себя с вами»"
-          <img src="images/male.png"> <p class="stater">Цитата из википедии </p>
-        </h4>
+        <div class="item-inner">"Хотя в произведениях Аристотеля в чистом виде золотое правило не встречается, в его этике есть много созвучных суждений, например на вопрос: «Как вести себя с друзьями?», Аристотель отвечает: «Так, как хотелось бы, чтобы они вели себя с вами»"
+        </div>
+        <div class="wrapper-center">
+          <div class="stater"><img alt="Image" src
+          ="images/male.png"> Цитата из википедии </div>
+        </div>
       </div>
       <div class="item">
-        <h4>"Нравственный закон, не зависящий от посторонних причин, единственно делает человека по-настоящему свободным. Еще этот слайдер листается стрелками."
-          <img src="images/male.png"> <p class="stater">Джордж Буш</p>
-        </h4>
+        <div class="item-inner">"Нравственный закон, не зависящий от посторонних причин, единственно делает человека по-настоящему свободным. Еще этот слайдер листается стрелками."
+        </div>
+        <div class="wrapper-center">
+          <div class="stater"><img alt="Image" src
+          ="images/male.png"> Просто парень с улицы</div>
+        </div>
       </div>
     </div>
+    <div class="bevel bl br"></div>
      <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
@@ -309,7 +329,7 @@
         <p>Свяжитесь с нами, и получите ответ в течении часа.</p>
         <p><span class="glyphicon glyphicon-map-marker"></span> Киев, Украина</p>
         <p><span class="glyphicon glyphicon-phone"></span> +380993456789</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> asdfg@hjkl.com</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> nagato5556@gmail.com</p>
       </div> 
     </div>
     <div class="col-sm-7">
@@ -332,12 +352,12 @@
 </div>
 
 
-<footer class="container-fluid text-center bg-green">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"><br> <h2 class="heading-white">Ввысь!</h2></span>
+<footer id="site-footer" class="container-fluid text-center bg-green">
+  <a class="to-top" href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span><br> <h2 class="heading-white">Ввысь!</h2>
   </a>
-  <h5>Сайт создан студией <a href="#">KEIOSU</a></h5>
-  <h6>По вопросам сотрудничества: <a href="#">t.me/keiosu</a></h6>
+  <h4>Сайт еще разрабатывается. W3 валидация: <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fproduct-lnd.comeze.com%2F">validator.w3.org</a></h4>
+  <h5>По вопросам сотрудничества: <a href="https://t.me/keiosu">Телеграм@keiosu</a> | <a href="mailto:nagato5556@gmail.com">nagato5556@gmail.com</a></h5>
 </footer>
 
 </body>

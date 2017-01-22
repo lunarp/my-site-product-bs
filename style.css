@@ -16,9 +16,17 @@ body {
 }
 
 #myCarousel {
-	height: 270px;
-	padding: 0px;
-	margin: 0px;
+	height: 220px;
+	margin: 0px auto;
+
+}
+
+#reviews {
+	height: 500px;
+}
+
+#site-footer {
+	padding-top: 2em;
 }
 
 .bg-grey {
@@ -144,7 +152,7 @@ a.navbar-brand {
     color: #fff !important;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   .navbar-header {
       float: none;
   }
@@ -286,15 +294,19 @@ div.modal {
 }
 
 .modal-dialog {
-	margin: 10% auto;
+	margin: 10em auto;
 	width: 100%;
-	height: 50%;
+	height: 70%;
 }
 
 .modal-content {
 	background-color: transparent;
 	border: none;
 	box-shadow: none;
+}
+
+.modal-body{
+	padding: 0px;
 }
 
 .modal-body img {
@@ -307,19 +319,19 @@ div.modal {
 ~~~~~~~~~~~~~~*/
 
 
-
 .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: white;
+    width: 0%;
 }
 
 .carousel-indicators {
-	top: 110%;
+	top: 140%;
 }
 
 .carousel-indicators ol {
 	list-style-type: square;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .carousel-indicators li {
@@ -334,29 +346,48 @@ div.modal {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
+	border-right: 0px !important;
+	border-left: 0px !important;
+}
+
+.carousel-caption{
+	position: absolute;
+	top:200px;
 }
 
 .glyphicon-triangle-left, .glyphicon-triangle-right {
-	font-size: 50px;
-	padding-top: 260px;
+	font-size: 80px;
+	padding-top: 50%;
+}
+
+.glyphicon-triangle-left{
+	position: absolute;
+	right: 100%;
+}
+
+.glyphicon-triangle-right{
+	position: absolute;
+	left: 100%;
 }
 
 .item {
 	height: 100%;
+	position: relative;
+	bottom: 0px;
+	left: 0px;
 }
 
-.item h4 {
-	margin-bottom: 3%;
-	margin-top: 5%;
-	height: 100%;
+.item .item-inner {
 	overflow: scroll;
 	overflow-y: auto;
+	overflow-x: auto;
 	font-size: 19px;
     line-height: 1.375em;
     font-weight: 400;
     font-style: italic;
-    margin: 50px 0;
-}
+    margin: auto;
+    padding: 2.5em 1.5em 0em 1.5em;
+ }
 
 .item.active {
 	height: 100%;
@@ -364,19 +395,55 @@ div.modal {
 	margin: 0px;
 }
 
+
 .item img {
-	display: block;
-	margin: 3% auto 1%;
-	width: 50px;
-	height: 50px;
+	display: inline;
+	margin: 3% auto 0px;
+	width: 30px;
+	height: 30px;
 	border: 1px solid black;
 	border-radius: 3px;
+	vertical-align: -10px;
 }
 
+.wrapper-center {
+	position: absolute;
+	bottom: 0px;
+	left:50%;
+}
 
-.item p.stater {
+.stater {
 	font-family: 'Comfortaa';
+	font-size: 0.9em;
+	position: relative;
+	left:-50%;
 }
+
+.bvc { left: 0px }
+.bevel, .content { border-width: 65px }
+.bevel, .content { border-color: #efefef; border-style:solid; }
+
+.bvc {
+    width: 90%; /* width of overall box, variable or fixed */ 
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.bvc .tr, .bvc .tl, .bvc .br, .bvc .bl { height: 0px; width: 100%; }
+.bvc .tr, .bvc .tl { border-top: 0; }
+.bvc .br, .bvc .bl { border-bottom: 0; }
+.bvc .tr, .bvc .br { border-right-color: transparent; }
+.bvc .tl, .bvc .bl { border-left-color: transparent; }
+.no_bevel { height: 0px; width: 100%; border-bottom: 0; }
+
+.content {
+    background: #efefef no-repeat;
+    width: 100%;
+    border-top: 0;
+    border-bottom: 0;
+}
+
 
 /*~~~~~~~~~~~~~~~
 	 Расценки 
@@ -458,18 +525,32 @@ div.modal {
 
 footer.container-fluid {
 	padding-bottom: 5px;
+	margin-bottom:29px;
 }
 
-footer a span {
-	font-size: 40px;
+.to-top, .to-top:visited {
+	font-size: 50px;
 	color: white;
+	text-decoration: none;
+
 }
 
-footer a span:hover {
+.to-top:hover {
 	color: #EDCEED;
+	text-decoration: none;
 }
 
-footer h5, footer h6 {
+.to-top span {
+	transform: scaleX(2);
+}
+
+.to-top h2 {
+	margin: 0px;
+}
+
+footer h4, footer h5 {
+	font-style: italic;
 	text-align: right;
 	color: white;
+	margin-right: 5%;
 }
