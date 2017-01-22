@@ -116,7 +116,6 @@ body {
     line-height: 1.4 !important;
     letter-spacing: 3px;
     border-radius: 0;
-    opacity: 0.95;
 }
 
 
@@ -124,8 +123,34 @@ body {
     color: #fff !important;
 }
 
-a.navbar-brand {
-	padding: 0px;
+a.navbar-brand{
+	padding: 2px;
+}
+
+a.navbar-brand img {
+	display: inline;
+}
+
+a.navbar-brand img:first-child{
+	animation-name: brand-animation;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+
+	-webkit-animation-name: brand-animation;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-delay: 1s;
+
+}
+
+@keyframes brand-animation{
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(180deg);
+	}
 }
 
 .navbar-brand img {
@@ -195,7 +220,7 @@ a.navbar-brand {
 ~~~~~~~~~~~~~~*/
 
 .jumbotron {
-	margin-top: 50px;
+	padding-top: 80px !important;
 	color: #fff;
 	padding: 15px 0px 35px 0px;
 	margin-bottom: 0px;
