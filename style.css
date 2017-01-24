@@ -9,6 +9,7 @@ html, body {
 body {
 	margin: auto;
 	width: 90%;
+	overflow-x: hidden;
 }
 
 #product-descr {
@@ -186,7 +187,10 @@ a.navbar-brand img:first-child{
   		.container-fluid {padding:10px 0px 10px 0px;}
   		.stater, .bevel {display: none;}
   		.item-inner {padding: 5px 3px !important;}
+  		.navbar-toggle{float: right;
+  						margin-right: 20%;}
 }
+
 
 
 @media (max-width: 991px) {
@@ -197,7 +201,7 @@ a.navbar-brand img:first-child{
       float: none !important;
   }
   .navbar-toggle {
-      display: block;
+      display: inline;
   }
   .navbar-collapse {
       border-top: 1px solid transparent;
